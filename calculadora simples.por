@@ -3,31 +3,31 @@ programa
 	
 	funcao inicio()
 	{
-		caracter operador
-		real num1
-		real num2
-		real resultado = (0)
+		
+    	real numero1
+    	real numero2
+    	caracter simbolo
+    	real resultado = (0)
 
-		escreva("Digite seu primeiro numero: ")
-		leia(num1)
-		escreva("Digite o operador: ")
-		leia(operador)
-		escreva("Digite seu segundo numero: ")
-		leia(num2)
+    	escreva("Primeiro numero: ")
+    	leia(numero1)
+    	escreva("Seu operador: ")
+    	leia(simbolo)
+    	escreva("Segundo numero: ")
+    	leia(numero2)
+    	
+	se(simbolo == '+')
+    		resultado = (numero1 + numero2)
+    	senao se(simbolo == '-')
+     	resultado = (numero1 - numero2)
+   	senao se(simbolo == '*')
+      	resultado = (numero1 * numero2)
+    	senao se(simbolo == '/')
+      	resultado = (numero1 / numero2)
+    	senao
+      	escreva("Invalido")
 
-		se(operador == '+')
-			resultado = (num1 + num2)
-			escreva(resultado)
-		se(operador == '-')
-			resultado = num1 - num2
-				escreva(resultado)
-		se(operador == '*')
-			resultado = num1 * num2
-				escreva(resultado)
-		se(operador == '/')
-			resultado = num1 / num2
-				escreva(resultado)
-	
+    escreva(resultado)
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -35,7 +35,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 338; 
+ * @POSICAO-CURSOR = 587; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
